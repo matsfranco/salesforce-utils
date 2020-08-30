@@ -1,0 +1,26 @@
+Text Formula Field based on <date_field>
+
+# English
+CASE(
+MOD( <date_field> - DATE( 1900, 1, 7 ), 7 ),
+0, "Sunday",
+1, "Monday",
+2, "Tuesday",
+3, "Wednesday",
+4, "Thursday",
+5, "Friday",
+"Saturday"
+)
+
+# Portugues
+
+CASE(
+MOD( <date_field> - DATE( 1900, 1, 7 ), 7 ),
+0, "Domingo",
+1, "Segunda-feira",
+2, "Terça-feira",
+3, "Quarta-feira",
+4, "Quinta-feira",
+5, "Sexta-feira",
+"Sábado"
+)
