@@ -12,8 +12,7 @@ MOD( <date_field> - DATE( 1900, 1, 7 ), 7 ),
 "Saturday"
 )
 
-# Portugues
-
+# Português
 CASE(
 MOD( <date_field> - DATE( 1900, 1, 7 ), 7 ),
 0, "Domingo",
